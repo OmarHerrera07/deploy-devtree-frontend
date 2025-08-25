@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Extender el theme */
+@theme {
+  --background-image-home: url('/bg.svg');
+  --background-size-home: 50%;
+}
