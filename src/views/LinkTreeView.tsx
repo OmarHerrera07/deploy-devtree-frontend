@@ -26,7 +26,7 @@ export const LinkTreeView = () => {
   useEffect(() => {
     const updateData = devTreeLinks.map((item) => {
       const userLink = JSON.parse(user.links).find(
-        (link) => link.name === item.name
+        (link : SocialNetwork) => link.name === item.name
       );
       if (userLink) {
         return { ...item, url: userLink.url, enabled: userLink.enabled };
@@ -37,7 +37,7 @@ export const LinkTreeView = () => {
     setDevTreeLinks(updateData);
   }, []);
 
-  const handleUrlChangue = (e: ChangeEvent<HTMLSelectElement>) => {
+  const handleUrlChangue = (e: ChangeEvent<HTMLInputElement>) => {
     const updateLinks = devTreeLinks.map((link) =>
       link.name === e.target.name ? { ...link, url: e.target.value } : link
     );

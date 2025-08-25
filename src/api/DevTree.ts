@@ -1,6 +1,6 @@
 import { isAxiosError } from "axios";
 import api from "../config/axios";
-import type { ProfileForm, User, UserHandle } from "../types";
+import type { User, UserHandle } from "../types";
 
 export const getUser = async () => {
     try {

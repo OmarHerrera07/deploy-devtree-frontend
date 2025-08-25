@@ -5,7 +5,7 @@ import type { ChangeEvent } from "react";
 
 type DevTreeInputProps = {
   item: DevTreeLink
-  handleUrlChangue: (e:ChangeEvent<HTMLSelectElement>) => void
+  handleUrlChangue: (e: ChangeEvent<HTMLInputElement>) => void
   handleEnableLink: ( name: string) => void
 };
 export const DevTreeInput = ({ item,handleUrlChangue,handleEnableLink }: DevTreeInputProps) => {

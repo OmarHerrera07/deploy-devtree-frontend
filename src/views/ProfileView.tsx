@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { ErrorMessage } from "../components/ErrorMessage";
 import {
-  QueryClient,
   useMutation,
   useQueryClient,
 } from "@tanstack/react-query";
@@ -17,8 +16,7 @@ export const ProfileView = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-    reset,
+    formState: { errors }
   } = useForm({
     defaultValues: {
       handle: data.handle,

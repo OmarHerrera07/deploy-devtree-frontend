@@ -5,7 +5,8 @@ import type { SocialNetwork, User } from "../types";
 import { useEffect, useState } from "react";
 import { DevTreeLinks } from "./DevTreeLinks";
 
-import { DndContext, DragEndEvent, closestCenter } from "@dnd-kit/core";
+import { DndContext, closestCenter } from "@dnd-kit/core";
+import type { DragEndEvent } from "@dnd-kit/core";
 import {
   SortableContext,
   verticalListSortingStrategy,
